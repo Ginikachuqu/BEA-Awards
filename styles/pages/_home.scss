@@ -6,9 +6,7 @@
   max-height: 4rem;
   padding: 3rem 5rem;
   width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include centerContent;
   z-index: 1;
 
   .logo {
@@ -31,10 +29,8 @@
         position: relative;
 
         a {
-          text-decoration: none;
-          text-transform: uppercase;
-          color: var(--color-white);
-          transition: color 0.3s ease;
+          @include link__modifier;
+          @include transitionItem;
 
           &.current::before {
             content: "";
@@ -206,9 +202,7 @@
   }
 
   .snippet__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include centerContent;
 
     // @media screen and (max-width: 48em) {
     //   justify-content: space-evenly;
@@ -228,9 +222,7 @@
       font: $font-secondary;
       font-size: 1rem;
       position: relative;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: var(--color-gray);
+      @include link__modifier;
       transition: all 0.3s ease;
       letter-spacing: 1px;
 
@@ -319,9 +311,7 @@
   }
 
   &-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include centerContent;
 
     .showcase__header-text {
       font: $font-tertiary;
@@ -337,10 +327,8 @@
       font: $font-secondary;
       font-size: 1rem;
       position: relative;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: var(--color-gray);
-      transition: all 0.3s ease;
+      @include link__modifier;
+      @include transitionItem;
       letter-spacing: 1px;
 
       &::after {
@@ -351,7 +339,7 @@
         height: 1px;
         width: 50%;
         background-color: var(--color-gray);
-        transition: all 0.5s ease;
+        @include transitionItem;
       }
 
       &:hover::after {
@@ -364,10 +352,9 @@
     width: 100%;
     min-height: 100%;
     margin-top: 1.5rem;
-    // padding: 1rem 0;
+    padding: 1rem 2rem;
 
     article {
-      width: 100%;
       min-height: 15rem;
       padding: 0.8rem 0;
       border: 1px solid var(--color-white);
@@ -399,9 +386,7 @@
 
           a {
             font-size: 2rem;
-            text-decoration: none;
-            text-transform: uppercase;
-            color: var(--color-gray);
+            @include link__modifier;
           }
         }
         .separator {
@@ -414,8 +399,9 @@
         text-align: center;
         color: var(--color-gray);
         font-size: 1rem;
-        white-space: nowrap;
+        // white-space: nowrap;
         text-overflow: ellipsis;
+        padding: 0 1rem;
       }
     }
 
@@ -435,9 +421,7 @@ footer.home__footer {
   padding: 0 8rem;
 
   .footer__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include centerContent;
 
     .media__links {
       ul {
@@ -447,10 +431,8 @@ footer.home__footer {
           list-style: none;
           a {
             font-size: 0.8rem;
-            text-decoration: none;
-            text-transform: uppercase;
-            color: var(--color-white);
-            transition: all 0.3s ease;
+            @include link__modifier;
+            @include transitionItem;
 
             &:hover {
               color: var(--color-gray);

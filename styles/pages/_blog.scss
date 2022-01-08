@@ -1,7 +1,7 @@
 section.container {
   width: 100%;
   min-height: 100vh;
-  margin: 5rem auto;
+  margin: 3rem auto;
 
   .page__content {
     height: 100%;
@@ -9,9 +9,7 @@ section.container {
 
     &-header {
       min-height: 120px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @include centerContent;
       margin: 1rem 0;
 
       .title {
@@ -140,10 +138,11 @@ section.container {
       }
 
       .article__content {
+        min-width: 100%;
         text-align: center;
         color: var(--color-gray);
         font-size: 1rem;
-        white-space: nowrap;
+        // white-space: nowrap;
         text-overflow: ellipsis;
       }
     }
