@@ -21,9 +21,31 @@ p {
 
   nav {
     font-size: 1rem;
+
+    @media screen and (max-width: 900px) {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100%;
+      min-width: 100%;
+      background: var(--color-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      clip-path: circle(0% at 100% 0);
+      transition: clip-path 0.3s;
+      z-index: 100;
+    }
+
     ul {
       display: flex;
       list-style: none;
+
+      @media screen and (max-width: 900px) {
+        padding: 2rem;
+        flex-direction: column;
+        align-items: center;
+      }
 
       li {
         position: relative;
@@ -32,7 +54,12 @@ p {
           text-decoration: none;
           text-transform: uppercase;
           color: var(--color-white);
-          transition: color 0.3s ease;
+          @include transitionItem;
+
+          @media screen and (max-width: 900px) {
+            color: var(--color-black);
+            font-size: 1.8rem;
+          }
 
           &.current::before {
             content: "";
@@ -44,6 +71,10 @@ p {
             width: 4px;
             border-radius: 50%;
             background-color: #fff;
+
+            @media screen and (max-width:900px) {
+              background-color: var(--color-black);
+            }
           }
 
           &:hover {
@@ -54,7 +85,49 @@ p {
 
       li:not(:last-of-type) {
         margin-right: 2rem;
+
+        @media screen and (max-width: 900px) {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
       }
+    }
+  }
+
+  .hamburger {
+    display: none;
+    height: 20px;
+    width: 30px;
+    padding: 2px;
+
+    .line {
+      position: relative;
+      height: 3px;
+      width: 100%;
+      background-color: var(--color-white);
+
+      &:not(:last-of-type) {
+        margin-bottom: 3px;
+      }
+
+      &__1 {
+        animation: line__1 0.3s;
+      }
+
+      &__2 {
+        right: -5px;
+        width: 80%;
+      }
+
+      &__3 {
+        right: -10px;
+        width: 60%;
+        animation: line__3 0.3s;
+      }
+    }
+
+    @media screen and (max-width: 900px) {
+      display: block;
     }
   }
 }

@@ -6,6 +6,11 @@
     line-height: 1.625;
     display: flex;
     gap: 50px;
+
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+      padding: 0 30px;
+    }
   
     .page__content-wrapper {
       // padding-right: 48px;
