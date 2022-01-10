@@ -59,6 +59,11 @@
   align-items: center;
   z-index: 1;
 }
+@media screen and (max-width: 1200px) {
+  .header {
+    padding: 3rem 1.5rem;
+  }
+}
 @media screen and (max-width: 700px) {
   .header {
     padding: 3rem 2rem;
@@ -186,7 +191,7 @@
 @media screen and (max-width: 900px) {
   .showcase__wrapper {
     margin-top: 3rem;
-    min-height: 40vh;
+    min-height: 60vh;
   }
 }
 @media screen and (max-width: 700px) {
@@ -205,6 +210,11 @@
     padding: 0 2rem;
   }
 }
+@media screen and (max-width: 1200px) {
+  .showcase {
+    padding: 0 1.5rem;
+  }
+}
 .showcase__hero {
   width: 100%;
   height: 100%;
@@ -220,6 +230,11 @@
   letter-spacing: -0.03em;
   color: var(--color-gray);
   margin-top: 8rem;
+}
+@media screen and (max-width: 1200px) {
+  .showcase__hero .hero__text {
+    font-size: 3.2rem;
+  }
 }
 @media screen and (max-width: 900px) {
   .showcase__hero .hero__text {
@@ -863,7 +878,7 @@ section.container .page__content-header .archive__filter {
   }
 }
 section.container .page__content-header .archive__filter .categories__menu {
-  margin-top: -25px;
+  margin-top: -20px;
   position: absolute;
   min-width: 200px;
   background-color: var(--color-black);
@@ -893,10 +908,10 @@ section.container .page__content-header .archive__filter .categories__menu:hover
   display: block;
 }
 section.container .page__content-header form {
-  min-height: 1.5rem;
-  min-width: 130px;
-  padding: 0 0.5rem;
-  border: 1px solid var(--color-white);
+  display: flex;
+  flex-direction: row;
+  border: 1px solid var(--color-gray);
+  padding: 5px 10px;
   border-radius: 0.3rem;
 }
 @media screen and (max-width: 700px) {
@@ -908,6 +923,7 @@ section.container .page__content-header form label {
   display: none;
 }
 section.container .page__content-header form input {
+  flex-grow: 2;
   padding: 0.5rem;
   background: transparent;
   outline: none;
@@ -916,11 +932,12 @@ section.container .page__content-header form input {
 }
 section.container .page__content-header form button {
   min-width: 80px;
-  height: 2.8em;
+  height: 2.5em;
   background: var(--color-black);
   color: var(--color-white);
   outline: none;
   border: 1px solid var(--color-white);
+  cursor: pointer;
 }
 section.container .article__showcase {
   width: 100%;
