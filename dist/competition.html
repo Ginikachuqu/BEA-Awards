@@ -13,7 +13,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.js"></script>
   </head>
-  <body id="js-scroll">
+  <body>
     <header class="header">
       <div class="logo">
         <img src="../public/svg/logowhite.svg" alt="logo" />
@@ -23,8 +23,8 @@
           <li><a href="./index.html" class="nav__link">home</a></li>
           <li><a href="./gallery.html" class="nav__link">gallery</a></li>
           <li><a href="./blog.html" class="nav__link">blog</a></li>
-          <li><a href="./about.html" class="current nav__link">about</a></li>
-          <li><a href="./competition.html" class="nav__link">competition</a></li>
+          <li><a href="./about.html" class="nav__link">about</a></li>
+          <li><a href="./competition.html" class="current nav__link">competition</a></li>
         </ul>
       </nav>
       <div class="hamburger">
@@ -33,32 +33,10 @@
         <div class="line line__3"></div>
       </div>
     </header>
-    <div class="about__container" data-scroll-section>
-      <p class="about__container-data" data-scroll>
-        BLACK EXCELLENCE AWARDS is an annual award ceremony that recognize and
-        celebrate the achievements and giant strides of people of Black Origin
-        living in The Russian Federation.
-      </p>
-
-      <p data-scroll>
-        BLACK EXCELLENCE AWARDS recognize works from different spheres of life
-        including but not limited to:
-      </p>
-
-      <p class="about__container-link" data-scroll>
-        Education, Entertainment, Fashion, Business Sports, Special Recognition,
-        Humanitarian, Philantropy etc.
-      </p>
+    <div class="info__container">
+      <img src="../public/jpg/competition.jpg" alt="competition flyer">
+      <a href="https://forms.gle/JaQUR8hDxcKfYvWt6" target="_blank">Click here to register</a>
     </div>
     <script src="./main.js"></script>
-    <script>
-      // smooth scroll
-      const scroll = new LocomotiveScroll({
-        el: document.querySelector("#js-scroll"),
-        smooth: true,
-        smoothMobile: true,
-        inertia: 0.75,
-      });
-    </script>
   </body>
 </html>
