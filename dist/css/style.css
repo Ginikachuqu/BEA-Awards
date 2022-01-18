@@ -922,6 +922,7 @@ section.container .page__content-header .archive__filter .categories__menu {
   margin-top: -20px;
   position: absolute;
   padding: 0 2.5rem;
+  text-transform: uppercase;
   background-color: var(--color-black);
   border: 1px solid var(--color-gray);
   border-radius: 0.3rem;
@@ -1184,6 +1185,7 @@ section.container .article__showcase a.read__more {
 }
 .container .page__content-wrapper article .comments__area {
   min-height: 15rem;
+  margin-bottom: 2rem;
 }
 .container .page__content-wrapper article .comments__area-header {
   margin-right: 6px;
@@ -1217,7 +1219,7 @@ section.container .article__showcase a.read__more {
   padding-top: 1.5rem;
 }
 .container .page__content-wrapper article .comments__area .comment__list li.comment article {
-  min-height: 170px;
+  height: 170px;
   position: relative;
 }
 .container .page__content-wrapper article .comments__area .comment__list li.comment article .comment__number {
@@ -1358,21 +1360,34 @@ section.container .article__showcase a.read__more {
   font-size: 1rem;
   line-height: 0 !important;
 }
-.container .side__bar #categories .title {
-  font-size: 1.5rem;
+.container .side__bar .categories__menu {
+  padding: 0 0.5rem;
+  text-transform: uppercase;
+  background-color: var(--color-black);
+  border: 1px solid var(--color-gray);
+  border-radius: 0.3rem;
+  cursor: pointer;
+  z-index: 10;
+}
+.container .side__bar .categories__menu .dropdown__trigger {
+  font-size: 1.2rem;
   color: var(--color-gray);
-  font-weight: lighter;
-  margin-top: 20px;
+  text-decoration: none;
 }
-.container .side__bar #categories form label {
+.container .side__bar .categories__menu ul {
   display: none;
+  transition: all 0.5s ease-in-out;
 }
-.container .side__bar #categories form select {
-  width: 100%;
-  max-width: 100%;
-  padding: 0.625rem;
-  outline: none;
-  background: var(--color-gray);
+.container .side__bar .categories__menu ul li {
+  list-style: none;
+}
+.container .side__bar .categories__menu ul li a {
+  color: var(--color-gray);
+  font-size: 1rem;
+  text-decoration: none;
+}
+.container .side__bar .categories__menu:hover ul {
+  display: block;
 }
 
 .block {
