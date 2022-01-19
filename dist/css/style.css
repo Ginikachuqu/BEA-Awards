@@ -922,7 +922,7 @@ section.container .page__content-header .archive__filter .categories__menu {
   margin-top: -20px;
   position: absolute;
   padding: 0 2.5rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
   background-color: var(--color-black);
   border: 1px solid var(--color-gray);
   border-radius: 0.3rem;
@@ -1371,7 +1371,7 @@ section.container .article__showcase a.read__more {
 }
 .container .side__bar .categories__menu {
   padding: 0 0.5rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
   background-color: var(--color-black);
   border: 1px solid var(--color-gray);
   border-radius: 0.3rem;

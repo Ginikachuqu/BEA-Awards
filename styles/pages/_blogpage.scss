@@ -420,7 +420,7 @@
   
       .categories__menu {
         padding: 0 .5rem;
-        text-transform: uppercase;
+        text-transform: capitalize;
         background-color: var(--color-black);
         border: 1px solid var(--color-gray);
         border-radius: 0.3rem;
