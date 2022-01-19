@@ -1,3 +1,7 @@
+::placeholder {
+  color: var(--color-gray);
+}
+
 .container {
     max-width: 1104px;
     margin: 0 auto;
@@ -301,6 +305,8 @@
                         cursor: pointer;
                         color: var(--color-gray);
                         padding: 0.1rem 0.4rem;
+                        outline: none;
+                        border: 1px solid var(--color-gray);
                     }
   
                     input {
@@ -311,6 +317,8 @@
                         border: none;
                         background: none;
                         border-bottom: 1px solid var(--color-gray);
+                        color: var(--color-gray);
+                        outline: none;
                     }
   
                     input[type=submit] {
@@ -318,6 +326,7 @@
                         background: var(--color-black);
                         color: var(--color-gray);
                         border: 1px solid var(--color-gray);
+                        cursor: pointer;
                     }
                 }
             }

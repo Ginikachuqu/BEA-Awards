@@ -1048,6 +1048,10 @@ section.container .article__showcase a.read__more {
   text-align: center;
 }
 
+::placeholder {
+  color: var(--color-gray);
+}
+
 .container {
   max-width: 1104px;
   margin: 0 auto;
@@ -1284,6 +1288,8 @@ section.container .article__showcase a.read__more {
   cursor: pointer;
   color: var(--color-gray);
   padding: 0.1rem 0.4rem;
+  outline: none;
+  border: 1px solid var(--color-gray);
 }
 .container .page__content-wrapper article .comment__respond form p input {
   width: 100%;
@@ -1293,12 +1299,15 @@ section.container .article__showcase a.read__more {
   border: none;
   background: none;
   border-bottom: 1px solid var(--color-gray);
+  color: var(--color-gray);
+  outline: none;
 }
 .container .page__content-wrapper article .comment__respond form p input[type=submit] {
   width: 30%;
   background: var(--color-black);
   color: var(--color-gray);
   border: 1px solid var(--color-gray);
+  cursor: pointer;
 }
 .container .side__bar {
   width: 70%;
