@@ -1190,6 +1190,7 @@ section.container .article__showcase a.read__more {
 .container .page__content-wrapper article .comments__area {
   min-height: 15rem;
   margin-bottom: 2rem;
+  padding-left: 1rem;
 }
 .container .page__content-wrapper article .comments__area-header {
   margin-right: 6px;
@@ -1450,9 +1451,30 @@ section.container .article__showcase a.read__more {
   color: var(--color-gray);
   font-size: 2.5rem;
 }
+@media screen and (max-width: 700px) {
+  .acc__block .acc {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .acc__block .acc {
+    font-size: 0.8rem;
+  }
+}
 .acc__block .acc__title {
   color: var(--color-gray);
   font-size: 2.5rem;
+}
+@media screen and (max-width: 700px) {
+  .acc__block .acc__title {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .acc__block .acc__title {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
 }
 .acc__block .acc__toggle-icon {
   color: var(--color-gray);
@@ -1494,6 +1516,66 @@ section.container .article__showcase a.read__more {
 .block a {
   color: var(--color-gray);
   font-size: 1rem;
+}
+
+.sub__container {
+  width: 70%;
+  margin: 30px auto;
+}
+.sub__container .news {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.sub__container p.pause {
+  font-size: 1.2rem;
+  margin: 3rem 0;
+  text-align: center;
+}
+.sub__container .more__info {
+  text-align: center;
+  font-size: 1.1rem;
+}
+.sub__container form {
+  margin: 30px auto;
+  width: 30%;
+  color: var(--color-gray);
+  display: flex;
+  flex-direction: column;
+}
+.sub__container form label {
+  font-size: 1rem;
+}
+.sub__container form input[type=text] {
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--color-gray);
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  color: var(--color-gray);
+}
+.sub__container form select {
+  background-color: var(--color-dark);
+  color: var(--color-gray);
+  outline: none;
+  border: 1px solid var(--color-gray);
+  padding: 0.5rem;
+}
+.sub__container form select option {
+  background-color: var(--color-dark);
+  padding: 0.5rem;
+}
+.sub__container form .lists {
+  margin-top: 0.8rem;
+}
+.sub__container form input[type=submit] {
+  margin: 0.5rem auto;
+  width: 8rem;
+  padding: 0.6em 0.8em;
+  background: transparent;
+  color: var(--color-gray);
+  outline: none;
+  border: 1px solid var(--color-gray);
 }
 
 *,

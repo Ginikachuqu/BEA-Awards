@@ -1,0 +1,69 @@
+.sub__container {
+  width: 70%;
+  margin: 30px auto;
+
+  .news {
+      font-size: 1.5rem;
+    text-align: center;
+  }
+
+  p.pause {
+    font-size: 1.2rem;
+    margin: 3rem 0;
+    text-align: center;
+  }
+
+  .more__info {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  form {
+    margin: 30px auto;
+    width: 30%;
+    color: var(--color-gray);
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-size: 1rem;
+    }
+
+    input[type=text] {
+      background: transparent;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid var(--color-gray);
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      color: var(--color-gray);
+    }
+
+    select {
+      background-color: var(--color-dark);
+      color: var(--color-gray);
+      outline: none;
+      border: 1px solid var(--color-gray);
+      padding: 0.5rem;
+
+      option {
+        background-color: var(--color-dark);
+        padding: 0.5rem;
+      }
+    }
+
+    .lists {
+        margin-top: .8rem;
+    }
+
+    input[type=submit] {
+        margin: .5rem auto;
+        width: 8rem;
+        padding: .6em .8em;
+        background: transparent;
+        color: var(--color-gray);
+        outline: none;
+        border: 1px solid var(--color-gray);
+    }
+  }
+}

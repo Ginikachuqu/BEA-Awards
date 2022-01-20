@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BEA &mdash; Welcome</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.css"
+    />
+    <link rel="shortcut icon" href="../public/svg/Favicon.ico" />
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.js"></script>
+  </head>
+  <body id="js-scroll" data-scroll-section>
+    <header class="header" data-scroll>
+      <div class="logo">
+        <img src="../public/svg/logowhite.svg" alt="logo" />
+      </div>
+      <nav data-scroll>
+        <ul>
+          <li><a href="./index.html" class="current nav__link">Home</a></li>
+          <li><a href="./gallery.html" class="nav__link">Gallery</a></li>
+          <li><a href="./blog.html" class="nav__link">Blog</a></li>
+          <li><a href="./about.html" class="nav__link">About</a></li>
+          <li><a href="./awards.html" class="nav__link">Awards</a></li>
+          <li>
+            <a href="./competition.html" class="nav__link">competition</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hamburger">
+        <div class="line line__1"></div>
+        <div class="line line__2"></div>
+        <div class="line line__3"></div>
+      </div>
+    </header>
+    <div class="sub__container">
+      <div class="news">
+        <p>
+          Congratulations! you've been added to our mailing list!📜 Check your email to confirm and
+          start receiving emails from us.
+        </p>
+      </div>
+
+      <p class="pause">Wait a minute! ✋</p>
+
+      <div class="more__info">
+        <p>
+          Do you need to change your email address?
+          <a href="#">Unsubscribe here</a> and simply sign up again
+        </p>
+      </div>
+
+      <form>
+        <label for="firstName">First Name: </label>
+        <input
+          type="text"
+          name="firstName"
+          id="firstName"
+          placeholder="First Name"
+        />
+        <label for="lastname">Last Name:</label>
+        <input
+          type="text"
+          name="lastName"
+          id="lastName"
+          placeholder="Last Name"
+        />
+        <label for="status">Status: </label>
+        <select name="status" id="status">
+          <option value="">Subscribed</option>
+        </select>
+
+        <div class="lists">
+          <label for="newslaterList">Newslater mailing list: </label>
+          <input type="checkbox" name="newslaterList" id="newslaterList" />
+        </div>
+
+        <input type="submit" value="Save">
+      </form>
+    </div>
+    <script src="./main.js"></script>
+    <script>
+      // smooth scroll
+      const scroll = new LocomotiveScroll({
+        el: document.querySelector("#js-scroll"),
+        smooth: true,
+        smoothMobile: true,
+        inertia: 0.75,
+      });
+    </script>
+  </body>
+</html>

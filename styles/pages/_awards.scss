@@ -8,6 +8,10 @@
     justify-content: space-around;
     align-items: center;
 
+    @media screen and (max-width: 700px) {
+
+    }
+
     li {
       list-style: none;
       height: 170px;
@@ -55,11 +59,28 @@
   .acc {
     color: var(--color-gray);
     font-size: 2.5rem;
+
+    @media screen and (max-width: 700px) {
+        font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        font-size: .8rem;
+    }
   }
 
   .acc__title {
     color: var(--color-gray);
     font-size: 2.5rem;
+
+    @media screen and (max-width: 700px) {
+        font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
   }
 
   .acc__toggle-icon {
