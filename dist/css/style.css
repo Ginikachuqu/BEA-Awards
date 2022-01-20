@@ -1412,9 +1412,8 @@ section.container .article__showcase a.read__more {
 }
 .awards__container ul li {
   list-style: none;
-  height: 170px;
-  width: 170px;
-  background-color: rgba(255, 255, 255, 0.1);
+  height: 180px;
+  width: 180px;
   text-align: center;
 }
 .awards__container ul li img {
@@ -1423,6 +1422,7 @@ section.container .article__showcase a.read__more {
 }
 .awards__container ul li span {
   display: block;
+  font-family: "D-DIN Condensed", sans-serif;
 }
 .awards__container ul li span.name {
   font-size: 1.3rem;
@@ -1537,10 +1537,25 @@ section.container .article__showcase a.read__more {
 }
 .sub__container form {
   margin: 30px auto;
-  width: 30%;
+  padding: 0 17rem;
   color: var(--color-gray);
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 1000px) {
+  .sub__container form {
+    padding: 0 7rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .sub__container form {
+    padding: 0 8rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .sub__container form {
+    padding: 0;
+  }
 }
 .sub__container form label {
   font-size: 1rem;

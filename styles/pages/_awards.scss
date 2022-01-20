@@ -8,16 +8,18 @@
     justify-content: space-around;
     align-items: center;
 
+
     @media screen and (max-width: 700px) {
 
     }
 
     li {
       list-style: none;
-      height: 170px;
-      width: 170px;
-      background-color: rgba(255, 255, 255, 0.1);
+      height: 180px;
+      width: 180px;
       text-align: center;
+
+      
 
       img {
         width: 100%;
@@ -26,6 +28,7 @@
 
       span {
         display: block;
+        font-family: $font-tertiary;
       }
 
       span.name {
@@ -87,6 +90,7 @@
     color: var(--color-gray);
   }
 }
+
 
 [data-collapse] {
     cursor: pointer;
