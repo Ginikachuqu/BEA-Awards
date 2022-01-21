@@ -1465,6 +1465,12 @@ section.container .article__showcase a.read__more {
   color: var(--color-gray);
   font-size: 2.5rem;
 }
+@media screen and (max-width: 900px) {
+  .acc__block .acc__title {
+    text-align: center;
+    margin-left: 2rem;
+  }
+}
 @media screen and (max-width: 700px) {
   .acc__block .acc__title {
     font-size: 1.5rem;
