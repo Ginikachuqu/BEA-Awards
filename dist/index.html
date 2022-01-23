@@ -6,14 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BEA &mdash; Welcome</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.css"
-    />
     <link rel="shortcut icon" href="../public/svg/Favicon.ico" />
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.js"></script>
   </head>
-  <body id="js-scroll" data-scroll-section>
+  <body>
     <header class="header">
       <div class="logo">
         <img src="../public/svg/logowhite.svg" alt="logo" />
@@ -40,13 +35,13 @@
       <div class="showcase">
         <div class="showcase__hero">
           <div class="hero__text">
-            <h1 class="hero__heading" data-scroll>
+            <h1 class="hero__heading">
               Black is <br />
               <br />
               King!
             </h1>
           </div>
-          <div class="hero__img" data-scroll>
+          <div class="hero__img">
             <img
               src="../public/webp/showcase/IMG_4705.webp"
               alt=""
@@ -78,10 +73,10 @@
     </div>
     <div class="gallery__snippet">
       <div class="snippet__header">
-        <h2 class="snippet__header-text" data-scroll>Gallery Snippet</h2>
-        <a href="./gallery.html" class="snippet__header-link" data-scroll>View Gallery ➡</a>
+        <h2 class="snippet__header-text">Gallery Snippet</h2>
+        <a href="./gallery.html" class="snippet__header-link">View Gallery ➡</a>
       </div>
-      <div class="snippet__images" data-scroll>
+      <div class="snippet__images">
         <div class="snippet__image-container">
           <div class="snippet__image snippet__image-1"></div>
         </div>
@@ -100,80 +95,78 @@
     <!-- Blog Section -->
     <div class="blog__showcase">
       <div class="blog__showcase-header">
-        <h2 class="showcase__header-text" data-scroll>Blog</h2>
-        <a href="./blog.html" class="showcase__header-link" data-scroll
-          >Go To Blog ➡</a
-        >
+        <h2 class="showcase__header-text">Blog</h2>
+        <a href="./blog.html" class="showcase__header-link">Go To Blog ➡</a>
       </div>
       <div class="blog__post-container">
         <article>
           <header>
-            <div class="article__date" data-scroll>
+            <div class="article__date">
               <span class="day">25</span><span class="month">January</span
               ><span class="year">2022</span>
             </div>
-            <h2 class="article__title" data-scroll>
+            <h2 class="article__title">
               <a href="#" rel="bookmark"
                 >Road to SMVP Podcast – Episode Three – How to win a VIP
                 ticket?</a
               >
             </h2>
-            <div class="separator" data-scroll>✻</div>
+            <div class="separator">✻</div>
           </header>
           <section class="article__content">
-            <p data-scroll>
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
               atque deleniti aspernatur ipsum ex impedit, illum quibusdam
               laudantium vero facere.
             </p>
           </section>
-          <a href="#" class="read__more" data-scroll>Read More</a>
+          <a href="#" class="read__more">Read More</a>
         </article>
         <article>
           <header>
-            <div class="article__date" data-scroll>
+            <div class="article__date">
               <span class="day">15</span><span class="month">March</span
               ><span class="year">2022</span>
             </div>
-            <h2 class="article__title" data-scroll>
+            <h2 class="article__title">
               <a href="#" rel="bookmark"
                 >Road to SMVP Podcast – Episode Three – How to win a VIP
                 ticket?</a
               >
             </h2>
-            <div class="separator" data-scroll>✻</div>
+            <div class="separator">✻</div>
           </header>
           <section class="article__content">
-            <p data-scroll>
+            <p>
               Want to win tickets to the Soundcity MVP Awards Festival taking
               place on the 11th of January 2020, listen to this episode of the
               [...]
             </p>
           </section>
-          <a href="#" class="read__more" data-scroll>Read More</a>
+          <a href="#" class="read__more">Read More</a>
         </article>
         <article>
           <header>
-            <div class="article__date" data-scroll>
+            <div class="article__date">
               <span class="day">15</span><span class="month">March</span
               ><span class="year">2022</span>
             </div>
-            <h2 class="article__title" data-scroll>
+            <h2 class="article__title">
               <a href="#" rel="bookmark"
                 >Road to SMVP Podcast – Episode Three – How to win a VIP
                 ticket?</a
               >
             </h2>
-            <div class="separator" data-scroll>✻</div>
+            <div class="separator">✻</div>
           </header>
           <section class="article__content">
-            <p data-scroll>
+            <p>
               Want to win tickets to the Soundcity MVP Awards Festival taking
               place on the 11th of January 2020, listen to this episode of the
               [...]
             </p>
           </section>
-          <a href="#" class="read__more" data-scroll>Read More</a>
+          <a href="#" class="read__more">Read More</a>
         </article>
       </div>
     </div>
@@ -195,9 +188,7 @@
           </ul>
         </div>
         <div class="news__later">
-          <p class="news__later-text">
-            Subscribe to our newslater!
-          </p>
+          <p class="news__later-text">Subscribe to our newslater!</p>
           <form action="">
             <input
               type="text"
@@ -211,14 +202,5 @@
       </div>
     </footer>
     <script src="./main.js"></script>
-    <script>
-      // smooth scroll
-      const scroll = new LocomotiveScroll({
-        el: document.querySelector("#js-scroll"),
-        smooth: true,
-        smoothMobile: true,
-        inertia: 0.75,
-      });
-    </script>
   </body>
 </html>
