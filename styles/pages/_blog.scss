@@ -122,6 +122,10 @@ section.container {
         margin-bottom: 1rem;
       }
 
+      @media screen and (max-width: 500px) {
+        padding: 0;
+      }
+
       header {
         display: flex;
         flex-flow: column nowrap;
@@ -160,8 +164,13 @@ section.container {
         text-align: center;
         color: var(--color-gray);
         font-size: 1rem;
-        // white-space: nowrap;
         text-overflow: ellipsis;
+
+        img {
+          margin-top: 1rem;
+          width: 250px;
+          height: 250px;
+        }
       }
     }
 
